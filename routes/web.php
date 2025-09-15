@@ -16,3 +16,11 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/randriamitandrina-completez-votre-reservation', function () {
+    return view('randriamitandrina-completez-votre-reservation');
+});
+
+Route::get('/randriamitandrina-paiement', function () {
+    return view('randriamitandrina-paiement');
+});
