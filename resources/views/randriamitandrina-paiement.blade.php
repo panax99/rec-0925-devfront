@@ -20,8 +20,8 @@
 
 <body class="antialiased w-[100vw]">
     @include('components.navbar')
-    <div class="w-full px-20 flex justify-between gap-20 py-7">
-        <div class="w-1/2 h-full flex flex-col gap-5">
+    <div class="w-full px-20 flex flex-col md:flex-row justify-between gap-20 py-7">
+        <div class="w-full md:w-1/2 h-full flex flex-col gap-5">
             <p class="text-lg font-semibold">Confirmer et payer</p>
             <div class="flex items-center justify-start space-x-5 ring-1 ring-gray-300 rounded-lg p-4">
                 <i class="fa-solid fa-arrow-trend-up text-red-400"></i>
@@ -137,7 +137,7 @@
         </div>
 
          <!-- Informations -->
-        <div class="w-5/12 flex flex-col items-center">
+        <div class="w-full md:w-5/12 flex flex-col items-center">
             <div class="sticky top-7 flex flex-col gap-6 w-full">
                 <div class="w-full flex flex-col gap-6 ring-1 ring-gray-300 rounded-lg p-6">
                     <p class="text-[#BF2A6B] font-semibold">Récapitulatif de votre test psychotechnique</p>
