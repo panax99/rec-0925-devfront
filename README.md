@@ -1,46 +1,84 @@
 # Test technique — Dev Front
+## Aperçu du projet
 
-## Objectif
-Reproduire fidèlement l’interface fournie (**Adobe XD**) **au pixel près**.  
-En cas d’incohérence visuelle, ajustez pour obtenir une **vue harmonisée** (alignements, hiérarchie visuelle, rythme vertical) et **documentez** vos arbitrages dans le README (section « Notes de design »).
+Ce projet est la réalisation d’un test technique dont l’objectif était de reproduire au pixel près une interface fournie via Adobe XD, en utilisant Laravel Blade, HTML et Tailwind CSS.
+Il met en avant une approche soignée du design system, du responsive et de la finesse des détails visuels.
 
-🔗 **Maquettes** : https://xd.adobe.com/view/47f5bba9-a512-492c-85c6-d4fc4ddebc60-12a6/
+## Objectif principal
 
----
+Créer une reproduction fidèle de la maquette tout en garantissant une harmonisation visuelle (alignements, hiérarchie, rythme vertical).
+Documenter les choix et arbitrages dans le README pour justifier chaque adaptation.
 
-## Stack & périmètre
-- Réaliser les pages **en HTML et Tailwind CSS uniquement** (Tailwind est **déjà installé**).
-- **Aucune autre dépendance** ne devra être installée.
-- Ces pages sont **statiques** : **aucun besoin de base de données**.
+## Stack technique
 
----
+- Backend : Laravel (Blade templates)
 
-## Modalités de dépôt
-- Travaillez **uniquement sur un fork GitHub** de notre dépôt.
-- **Aucune branche** ne devra être créée : utilisez la **branche principale** de votre fork.
+- Frontend : Tailwind CSS + Vite
 
----
+- Gestion des dépendances : Composer (PHP) & npm/yarn (JS)
 
-## Routing requis (personnalisé par candidat)
-Les URL doivent être personnalisées par candidat selon le format :  
-`/{nom-de-famille}-{slug-de-la-page}`
+- Langages : PHP 8.1+, HTML, CSS (Tailwind)
 
-**Règles :**
-- **nom-de-famille** : en minuscules, accents supprimés, espaces → « - ».  
-  *Ex.* « Dupré-Lefèvre » → `dupre-lefevre`.
-- **slug-de-la-page** : en minuscules, accents supprimés, espaces → « - » ; caractères autorisés : `a–z`, `0–9`, `-`.  
-  Utiliser **un seul tiret** entre les segments ; **aucun tiret** en début/fin.
+## Fonctionnalités
 
-**Exemple avec le candidat *Dumoulin Adrien***
-- Page 1 : `/dumoulin-completez-votre-reservation`
-- Page 2 : `/dumoulin-paiement`
+- Pages statiques reproduisant fidèlement le design XD.
 
----
+- Composants Blade réutilisables pour une structure claire (approche similaire à React Components).
 
-## Livrables attendus
-- Lien GitHub de votre **fork public** (historique de commits propre et régulier).
-- **README** à la racine incluant :
-    - **Instructions de lancement/build** si différentes du projet de base.
-    - Section **« Notes de design »** : incohérences rencontrées, arbitrages, fallback de police si nécessaire.
-- *(Optionnel)* **Captures comparatives** montrant vos vérifications de pixel perfect.
-- **Temps passé** (indicatif).
+- Responsive design pensé mobile-first, avec des ajustements sur mesure par rapport à la maquette desktop.
+
+## Structure du projet
+
+- resources/views/ : pages Blade et composants personnalisés (x-components)
+
+- public/ : images, logos et ressources statiques
+
+- tailwind.config.js : configuration du thème et des breakpoints
+
+- package.json / composer.json : dépendances JS et PHP
+
+## Lancement rapide
+### Cloner le projet
+git clone <url_du_repo>
+cd rec-0925-devfront
+
+### Installer les dépendances PHP
+composer install
+
+### Installer les dépendances front
+npm install   # ou yarn install
+
+### Créer le fichier d’environnement
+cp .env.example .env
+
+### Générer la clé Laravel
+php artisan key:generate
+
+### Lancer en mode développement
+npm run dev
+php artisan serve
+
+### Accéder au projet
+[http://localhost:8000] (http://127.0.0.1:8000/)
+
+## URLs principales
+
+- /randriamitandrina-completez-votre-reservation
+
+- /randriamitandrina-paiement
+
+## Décisions de design
+
+- Uniformisation des boutons et le card : ajout d’icônes pour renforcer la cohérence.
+
+- Header repensé : amélioration de la hiérarchie visuelle pour une meilleure première impression.
+
+- Récapitulatif paiement sticky : ajusté pour rester visible lors du scroll.
+
+## Temps estimé
+
+Environ 10 heures de travail, incluant :
+
+- Mise en place du projet Laravel/Tailwind
+- Intégration fidèle des pages
+- Adaptations responsives et ajustements graphiques
