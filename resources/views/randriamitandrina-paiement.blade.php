@@ -137,42 +137,44 @@
         </div>
 
          <!-- Informations -->
-        <div class="w-5/12 gap-6 flex flex-col items-center">
-            <div class="w-full flex flex-col gap-6 ring-1 ring-gray-300 rounded-lg p-6">
-                <p class="text-[#BF2A6B] font-semibold">Récapitulatif de votre test psychotechnique</p>
-                <p class="text-sm">Total à payer : <span class="font-semibold">130.00€</span></p>
-                <p class="text-xs">
-                    En passant votre commande, vous acceptez les conditions générales de vente de la société AAAEP.
-                    Veuillez consulter notre politique de protection des données.
-                </p>
-            </div>
+        <div class="w-5/12 flex flex-col items-center">
+            <div class="sticky top-7 flex flex-col gap-6 w-full">
+                <div class="w-full flex flex-col gap-6 ring-1 ring-gray-300 rounded-lg p-6">
+                    <p class="text-[#BF2A6B] font-semibold">Récapitulatif de votre test psychotechnique</p>
+                    <p class="text-sm">Total à payer : <span class="font-semibold">130.00€</span></p>
+                    <p class="text-xs">
+                        En passant votre commande, vous acceptez les conditions générales de vente de la société AAAEP.
+                        Veuillez consulter notre politique de protection des données.
+                    </p>
+                </div>
 
-            <div class="flex justify-between w-10/12">
-                <div class="flex flex-col items-center justify-center gap-4">
-                    <div class="shadow rounded-full w-12 h-12 flex items-center justify-center p-3">
-                        <i class="fa-regular fa-hand-pointer text-[#0DBC0D]"></i>
+                <div class="flex justify-between w-full">
+                    <div class="flex flex-col items-center justify-center gap-4">
+                        <div class="shadow rounded-full w-12 h-12 flex items-center justify-center p-3">
+                            <i class="fa-regular fa-hand-pointer text-[#0DBC0D]"></i>
+                        </div>
+                        <div class="flex flex-col items-center justify-center">
+                            <p class="font-semibold text-sm">Entraînement</p>
+                            <p class="text-sm">Gratuit illimité</p>
+                        </div>
                     </div>
-                    <div class="flex flex-col items-center justify-center">
-                        <p class="font-semibold text-sm">Entraînement</p>
-                        <p class="text-sm">Gratuit illimité</p>
+                    <div class="flex flex-col items-center justify-center gap-4">
+                        <div class="shadow rounded-full w-12 h-12 flex items-center justify-center p-3">
+                            <i class="fa-regular fa-file-lines text-[#0DBC0D]"></i>
+                        </div>
+                        <div class="flex flex-col items-center justify-center">
+                            <p class="font-semibold text-sm">Résultats</p>
+                            <p class="text-sm">le Jour Même</p>
+                        </div>
                     </div>
-                </div>
-                <div class="flex flex-col items-center justify-center gap-4">
-                    <div class="shadow rounded-full w-12 h-12 flex items-center justify-center p-3">
-                        <i class="fa-regular fa-file-lines text-[#0DBC0D]"></i>
-                    </div>
-                    <div class="flex flex-col items-center justify-center">
-                        <p class="font-semibold text-sm">Résultats</p>
-                        <p class="text-sm">le Jour Même</p>
-                    </div>
-                </div>
-                <div class="flex flex-col items-center justify-center gap-4">
-                    <div class="shadow rounded-full w-12 h-12 flex items-center justify-center p-3">
-                        <i class="fa-regular fa-circle-check text-[#0DBC0D]"></i>
-                    </div>
-                    <div class="flex flex-col items-center justify-center">
-                        <p class="font-semibold text-sm">Annulation</p>
-                        <p class="text-sm">Gratuite jusqu'à 48h</p>
+                    <div class="flex flex-col items-center justify-center gap-4">
+                        <div class="shadow rounded-full w-12 h-12 flex items-center justify-center p-3">
+                            <i class="fa-regular fa-circle-check text-[#0DBC0D]"></i>
+                        </div>
+                        <div class="flex flex-col items-center justify-center">
+                            <p class="font-semibold text-sm">Annulation</p>
+                            <p class="text-sm">Gratuite jusqu'à 48h</p>
+                        </div>
                     </div>
                 </div>
             </div>
